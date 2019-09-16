@@ -348,9 +348,1248 @@
 
 
     
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/16/Android Handler机制 学习笔记/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lv Tong">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lv Tong">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/08/16/Android Handler机制 学习笔记/" itemprop="url">Android Handler机制 学习笔记</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-16T16:12:55+08:00">
+                2019-08-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p> <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener"> </a> 版权声明：本文为博主原创文章，遵循<a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener"> CC 4.0 BY-SA </a>版权协议，转载请附上原文出处链接和本声明。  本文链接：<a href="https://blog.csdn.net/qq_35564145/article/details/99680204" target="_blank" rel="noopener">https://blog.csdn.net/qq_35564145/article/details/99680204</a>   </p>
+<p>   emmmm本来想导出图片直接粘上来，没想到脑图导出bmp大小超了，别的格式清晰度又没法看23333</p>
+<p> 所以还是传GitHub吧…..(里面也还有一些设计模式、读书笔记，持续更新中)</p>
+<p> 脑图地址：<a href="https://github.com/lvtong199881/AndroidNote/blob/master/Android.bmp" target="_blank" rel="noopener">https://github.com/lvtong199881/AndroidNote/blob/master/Android.bmp</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/30/UI设计之Dialog/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lv Tong">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lv Tong">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/07/30/UI设计之Dialog/" itemprop="url">UI设计之Dialog</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-30T09:13:03+08:00">
+                2019-07-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p> <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener"> </a> 版权声明：本文为博主原创文章，遵循<a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener"> CC 4.0 BY-SA </a>版权协议，转载请附上原文出处链接和本声明。  本文链接：<a href="https://blog.csdn.net/qq_35564145/article/details/97749743" target="_blank" rel="noopener">https://blog.csdn.net/qq_35564145/article/details/97749743</a>   </p>
+<h1 id="Dialog概述"><a href="#Dialog概述" class="headerlink" title="Dialog概述"></a><strong>Dialog概述</strong></h1><p> dialog是应用向用户展示信息并提供一些的操作的一种通知形式，与toast不同，dialog会获取界面焦点，中断用户操作，这种方式比较突兀，用户体验不是很好，除了像登录场景、检测到用户作弊等情况，其他情况下还是要谨慎使用，更加推荐使用snackbar。</p>
+<hr>
+<h1 id="dialog的常见类型"><a href="#dialog的常见类型" class="headerlink" title="dialog的常见类型"></a><strong>dialog的常见类型</strong></h1><h2 id="1-默认dialog"><a href="#1-默认dialog" class="headerlink" title="1.默认dialog"></a><strong>1.默认dialog</strong></h2><p> Android封装了一个默认的AlertDialog,主要包括title、message、icon、积极/消极/中立三个按钮。示例代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"> AlertDialog.Builder normalDialog = new AlertDialog.Builder(this);</span><br><span class="line">normalDialog.setTitle(&quot;普通Dialog&quot;);</span><br><span class="line">normalDialog.setMessage(&quot;This is a normal dialog&quot;);</span><br><span class="line">normalDialog.setNegativeButton(&quot;确认&quot;, null);</span><br><span class="line">normalDialog.setPositiveButton(&quot;取消&quot;, null);</span><br><span class="line">normalDialog.create()</span><br><span class="line">.show();</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="2-列表dialog"><a href="#2-列表dialog" class="headerlink" title="2.列表dialog"></a>2.列表dialog</h2><p> 经常有一个需求，弹出一个列表，让用户选择，很简单。示例代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"> final String[] items = &#123;&quot;item1&quot;, &quot;item2&quot;, &quot;item3&quot;&#125;;</span><br><span class="line">final AlertDialog.Builder listDialog = new AlertDialog.Builder(this);</span><br><span class="line">listDialog.setTitle(&quot;列表Dialog&quot;);</span><br><span class="line">listDialog.setItems(items, new DialogInterface.OnClickListener() &#123;</span><br><span class="line">    @Override</span><br><span class="line">    public void onClick(DialogInterface dialog, int which) &#123;</span><br><span class="line">        dialog.dismiss();</span><br><span class="line">        Toast.makeText(MainActivity.this, items[which], Toast.LENGTH_SHORT)</span><br><span class="line">             .show();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line">listDialog.create()</span><br><span class="line">          .show();</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="3-单选dialog"><a href="#3-单选dialog" class="headerlink" title="3.单选dialog"></a>3.单选dialog</h2><p> 这个跟列表dialog所要实现的功能很像，只是列表项的监听器不一样。示例代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"> final String[] items = &#123;&quot;后端&quot;, &quot;前端&quot;, &quot;移动端&quot;, &quot;运维&quot;, &quot;安全&quot;, &quot;产品&quot;, &quot;技术支持&quot;, &quot;测试&quot;&#125;;</span><br><span class="line">AlertDialog.Builder singleCheckDialog = new AlertDialog.Builder(this);</span><br><span class="line">singleCheckDialog.setTitle(&quot;单选Dialog&quot;);</span><br><span class="line">singleCheckDialog.setSingleChoiceItems(items, 0, new DialogInterface.OnClickListener() &#123;</span><br><span class="line">    @Override</span><br><span class="line">    public void onClick(DialogInterface dialog, int which) &#123;</span><br><span class="line">        Toast.makeText(MainActivity.this, items[which], Toast.LENGTH_SHORT)</span><br><span class="line">             .show();</span><br><span class="line">        dialog.dismiss();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line">singleCheckDialog.setNegativeButton(&quot;取消&quot;, null);</span><br><span class="line">singleCheckDialog.create()</span><br><span class="line">                 .show();</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="4-多选dialog"><a href="#4-多选dialog" class="headerlink" title="4.多选dialog"></a>4.多选dialog</h2><p> 没啥好说的，直接上代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"> final String[] items = &#123;&quot;后端&quot;, &quot;前端&quot;, &quot;移动端&quot;, &quot;运维&quot;, &quot;安全&quot;, &quot;产品&quot;, &quot;技术支持&quot;, &quot;测试&quot;&#125;;</span><br><span class="line">final boolean[] selected = &#123;false, false, false, false, false, false, false, false,&#125;;</span><br><span class="line">AlertDialog.Builder multiCheckDialog = new AlertDialog.Builder(this);</span><br><span class="line">multiCheckDialog.setTitle(&quot;多选&quot;);</span><br><span class="line">multiCheckDialog.setIcon(R.mipmap.ic_launcher);</span><br><span class="line">multiCheckDialog.setMultiChoiceItems(items, selected, new DialogInterface.OnMultiChoiceClickListener() &#123;</span><br><span class="line">    @Override</span><br><span class="line">    public void onClick(DialogInterface dialog, int which, boolean isChecked) &#123;</span><br><span class="line"></span><br><span class="line">        Toast.makeText(MainActivity.this, items[which] + isChecked, Toast.LENGTH_SHORT)</span><br><span class="line">             .show();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line">multiCheckDialog.setPositiveButton(&quot;确定&quot;, new DialogInterface.OnClickListener() &#123;</span><br><span class="line">    @Override</span><br><span class="line">    public void onClick(DialogInterface dialog, int which) &#123;</span><br><span class="line">        dialog.dismiss();</span><br><span class="line">        Toast.makeText(MainActivity.this, &quot;确定&quot;, Toast.LENGTH_SHORT)</span><br><span class="line">             .show();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line">multiCheckDialog.create()</span><br><span class="line">                .show();</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="5-输入dialog"><a href="#5-输入dialog" class="headerlink" title="5.输入dialog"></a>5.输入dialog</h2><p> dialog中包含一个edittext，让用户输入信息后确认返回。示例代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"> final EditText editText = new EditText(this);</span><br><span class="line">AlertDialog.Builder inputDialog = new AlertDialog.Builder(this);</span><br><span class="line">inputDialog.setTitle(&quot;输入Dialog&quot;);</span><br><span class="line">inputDialog.setView(editText);</span><br><span class="line">inputDialog.setPositiveButton(&quot;确定&quot;, new DialogInterface.OnClickListener() &#123;</span><br><span class="line">    @Override</span><br><span class="line">    public void onClick(DialogInterface dialog, int which) &#123;</span><br><span class="line">        Toast.makeText(MainActivity.this, editText.getText()</span><br><span class="line">                                                  .toString() + &quot;&quot;, Toast.LENGTH_LONG)</span><br><span class="line">             .show();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line">inputDialog.setNegativeButton(&quot;取消&quot;, new DialogInterface.OnClickListener() &#123;</span><br><span class="line">    @Override</span><br><span class="line">    public void onClick(DialogInterface dialog, int which) &#123;</span><br><span class="line">        dialog.cancel();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line">inputDialog.create()</span><br><span class="line">           .show();</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="6-日期和时间dialog"><a href="#6-日期和时间dialog" class="headerlink" title="6.日期和时间dialog"></a>6.日期和时间dialog</h2><p> Android专门封装了日期和时间的dialog，方便使用。示例代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"> Calendar calendar = Calendar.getInstance();</span><br><span class="line">//日期dialog</span><br><span class="line">DatePickerDialog dialog =new DatePickerDialog(this, this, calendar.get(Calendar.YEAR),calendar.get(Calendar.MONTH),calendar.get(Calendar.DAY_OF_MONTH));</span><br><span class="line">dialog.show();</span><br><span class="line">//时间dialog</span><br><span class="line">TimePickerDialog dialog =new TimePickerDialog(this, this,calendar.get(Calendar.HOUR_OF_DAY), calendar.get(Calendar.MINUTE),true);</span><br><span class="line">dialog.show();</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="7-自定义dialog"><a href="#7-自定义dialog" class="headerlink" title="7.自定义dialog"></a>7.自定义dialog</h2><p> 开发中难免遇到现成的难以完美实现需求的问题，这时候就需要自定义dialog了，有两种写法，如果用得少，建议直接在代码里写就好，如果用得多，要实现重用，建议自己单写一个自定义dialog继承dialog。这部分代码太长了，就不直接贴代码了。</p>
+<p> 贴一个GitHub地址吧<a href="https://github.com/17859762411/DialogDemo" target="_blank" rel="noopener">https://github.com/17859762411/DialogDemo</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/29/MD UI设计之SwipeRefreshLayout/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lv Tong">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lv Tong">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/07/29/MD UI设计之SwipeRefreshLayout/" itemprop="url">MD UI设计之SwipeRefreshLayout</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-29T21:34:55+08:00">
+                2019-07-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p> <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener"> </a> 版权声明：本文为博主原创文章，遵循<a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener"> CC 4.0 BY-SA </a>版权协议，转载请附上原文出处链接和本声明。  本文链接：<a href="https://blog.csdn.net/qq_35564145/article/details/97680939" target="_blank" rel="noopener">https://blog.csdn.net/qq_35564145/article/details/97680939</a>   </p>
+<h1 id="SwipeRefreshLayout"><a href="#SwipeRefreshLayout" class="headerlink" title="SwipeRefreshLayout"></a><strong>SwipeRefreshLayout</strong></h1><p> SwipeRefreshLayout是谷歌官方推出的一个下拉刷新布局，经常与listview、recyclerview等配合使用，实现下拉刷新数据的效果。</p>
+<p> 使用方法：</p>
+<p> ①layout.xml中</p>
+<p> 引入SwipeRefreshLayout布局，在里面添加你想刷新的控件或布局。例如下图：<img src="https://img-blog.csdnimg.cn/20190729210056688.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1NTY0MTQ1,size_16,color_FFFFFF,t_70" alt></p>
+<p> ②activity中实例化SwipeRefreshLayout，这个就不用多说了。</p>
+<p> ③常见的几个函数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"> mSwipeRefreshLayout.setRefreshing(false); </span><br><span class="line">//用来控制刷新圆圈的显示与消失</span><br><span class="line"></span><br><span class="line">mSwipeRefreshLayout.setColorSchemeResources(R.color.colorAccent);</span><br><span class="line"></span><br><span class="line">//设置刷新圆圈中箭头的颜色，也可以填充多个颜色实现拼色效果，例如</span><br><span class="line"></span><br><span class="line">mSwipeRefreshLayout.setColorSchemeResources(R.color.colorAccent,R.color.colorPrimary,R.color.colorPrimaryDark);</span><br><span class="line"></span><br><span class="line">mSwipeRefreshLayout.setProgressBackgroundColorSchemeResource(android.R.color.white);</span><br><span class="line">//设置刷新圆圈的背景颜色</span><br><span class="line"></span><br><span class="line">mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() &#123;</span><br><span class="line">    @Override</span><br><span class="line">    public void onRefresh() &#123;</span><br><span class="line">        //do something</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line">//设置下拉刷新时的监听器，在重写的onRefresh方法中实现操作</span><br></pre></td></tr></table></figure>
+
+<p> ④实现延时消失效果</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"> mSwipeRefreshLayout.setRefreshing(true);</span><br><span class="line"></span><br><span class="line">//do something</span><br><span class="line"></span><br><span class="line">Handler handler = new Handler();</span><br><span class="line">handler.postDelayed(new Runnable() &#123;</span><br><span class="line">    @Override</span><br><span class="line">    public void run() &#123;</span><br><span class="line">        mSwipeRefreshLayout.setRefreshing(false);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;, 500);</span><br></pre></td></tr></table></figure>
+
+<p> 先显示刷新圆圈，然后执行操作，之后使用handler实现延时操作来使刷新圆圈在500毫秒后消失(当然，也可以不延时操作)。</p>
+<p> 最后实现效果如下图：</p>
+<p> <img src="https://img-blog.csdnimg.cn/20190729213020634.gif" alt></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/29/MD UI设计之Snackbar/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lv Tong">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lv Tong">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/07/29/MD UI设计之Snackbar/" itemprop="url">MD UI设计之Snackbar</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-29T20:52:28+08:00">
+                2019-07-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p> <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener"> </a> 版权声明：本文为博主原创文章，遵循<a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener"> CC 4.0 BY-SA </a>版权协议，转载请附上原文出处链接和本声明。  本文链接：<a href="https://blog.csdn.net/qq_35564145/article/details/97676618" target="_blank" rel="noopener">https://blog.csdn.net/qq_35564145/article/details/97676618</a>   </p>
+<h1 id="Snackbar"><a href="#Snackbar" class="headerlink" title="Snackbar"></a><strong>Snackbar</strong></h1><p> Snackbar是谷歌的一个类似于dialog、Toast的通知用户方式，需与CoordinatorLayout配套使用。</p>
+<h2 id="使用方法："><a href="#使用方法：" class="headerlink" title="使用方法："></a>使用方法：</h2><p> ①在activity中实例化CoordinatorLayout，这很重要，缺少实例化直接使用Snackbar，会报错null object。</p>
+<p> ②Snackbar的使用格式和Toast很类似，如下对比</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"> Toast.makeText(this, &quot;toast_text&quot;, Toast.LENGTH_SHORT).show();</span><br><span class="line">Snackbar.make(mCoordinatorLayout, &quot;snackbar_text&quot;, Snackbar.LENGTH_SHORT)</span><br><span class="line">                .addCallback(new Snackbar.Callback() &#123;</span><br><span class="line">                    @Override</span><br><span class="line">                    public void onDismissed(Snackbar transientBottomBar, int event) &#123;</span><br><span class="line">                        super.onDismissed(transientBottomBar, event);</span><br><span class="line">                        //do something</span><br><span class="line">                    &#125;</span><br><span class="line"></span><br><span class="line">                    @Override</span><br><span class="line">                    public void onShown(Snackbar sb) &#123;</span><br><span class="line">                        super.onShown(sb);</span><br><span class="line">                        //do something</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;)</span><br><span class="line">                .setAction(&quot;action&quot;, new View.OnClickListener() &#123;</span><br><span class="line">                    @Override</span><br><span class="line">                    public void onClick(View view) &#123;</span><br><span class="line">                        //do something</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;)</span><br><span class="line">                .show();</span><br></pre></td></tr></table></figure>
+
+<p> 在Snackbar的使用方法中：</p>
+<p> <strong>.make()</strong>是必要方法，mCoordinatorLayout是CoordinatorLayout的实例化，”snackbar_text”是Snackbar所要显示的内容，Snackbar.LENGTH_SHORT是Snackbar显示的时长，这个参数有三个选择：LENGTH_SHORT、LENGTH_INDEFINITE、LENGTH_LONG。</p>
+<p> <strong>.addCallback()</strong>不是必要方法，这个方法中可以重写两个方法，分别监听Snackbar的显示和消失，函数体内可以写自己的操作。</p>
+<p> <strong>.setAction()</strong>不是必要方法，这个方法实现在Snackbar右侧显示一个按钮，”action”是按钮显示的内容，View.OnClickListener()监听按钮的点击事件，在重写的onClick()中实现操作。</p>
+<p> <strong>.show()</strong>是必要方法，来使Snackbar显示出来。</p>
+<p> 上面Snackbar示例代码的效果如下：</p>
+<p> <img src="https://img-blog.csdnimg.cn/20190729205152238.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1NTY0MTQ1,size_16,color_FFFFFF,t_70" alt></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/17/Android Studio打开虚拟机时报错不能初始化adc/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lv Tong">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lv Tong">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/05/17/Android Studio打开虚拟机时报错不能初始化adc/" itemprop="url">Android Studio打开虚拟机时报错不能初始化adc</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-17T19:29:44+08:00">
+                2019-05-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p> <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener"> </a> 版权声明：本文为博主原创文章，遵循<a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener"> CC 4.0 BY-SA </a>版权协议，转载请附上原文出处链接和本声明。  本文链接：<a href="https://blog.csdn.net/qq_35564145/article/details/90299246" target="_blank" rel="noopener">https://blog.csdn.net/qq_35564145/article/details/90299246</a>   </p>
+<h1 id="错误：打开虚拟机时报错不能初始化adc、找不到麦克风"><a href="#错误：打开虚拟机时报错不能初始化adc、找不到麦克风" class="headerlink" title="错误：打开虚拟机时报错不能初始化adc、找不到麦克风"></a><strong>错误：打开虚拟机时报错不能初始化adc、找不到麦克风</strong></h1><p> 解决办法：</p>
+<ol>
+<li><p>将虚拟机的gpu渲染模式改为software<img src="https://img-blog.csdnimg.cn/20190517192247380.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1NTY0MTQ1,size_16,color_FFFFFF,t_70" alt> </p>
+</li>
+<li><p>在电脑系统的音频设备-&gt;录制中启用立体声混音 <img src="https://img-blog.csdnimg.cn/20190517192516848.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1NTY0MTQ1,size_16,color_FFFFFF,t_70" alt></p>
+<p>3.在虚拟机中将虚拟打开</p>
+<p><img src="https://img-blog.csdnimg.cn/20190517192731696.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1NTY0MTQ1,size_16,color_FFFFFF,t_70" alt></p>
+<p>我本人的解决办法是第三个。</p>
+</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/09/Android编程权威指南第三版 第32章/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lv Tong">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lv Tong">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/05/09/Android编程权威指南第三版 第32章/" itemprop="url">Android编程权威指南第三版 第32章</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-09T02:40:54+08:00">
+                2019-05-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p> <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener"> </a> 版权声明：本文为博主原创文章，遵循<a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener"> CC 4.0 BY-SA </a>版权协议，转载请附上原文出处链接和本声明。  本文链接：<a href="https://blog.csdn.net/qq_35564145/article/details/90005345" target="_blank" rel="noopener">https://blog.csdn.net/qq_35564145/article/details/90005345</a>   </p>
+<h1 id="挑战练习内容"><a href="#挑战练习内容" class="headerlink" title="挑战练习内容"></a>挑战练习内容</h1><p> 1.首先，让日落可逆。也就是说，点击屏幕，等太阳落下后，再次点击屏幕，让太阳升起来。 动画集不能逆向执行，因此，你需要新建一个AnimatorSet。</p>
+<p> 2.第二个挑战是添加太阳动画特效，让它有规律地放大、缩小或是加一圈旋转的光线。（这实际是反复执行一段动画特效，可考虑使用ObjectAnimator的setRepeatCount(int)方法。） 另外，海面上要是有太阳的倒影就更真实了。</p>
+<p> 3.最后，再来看个颇具挑战的练习。在日落过程中实现动画反转。在太阳慢慢下落时点击屏幕， 让太阳无缝回升至原来所在的位置。或者，在太阳落下进入夜晚时点击屏幕，让太阳重新升回天 空，就像日出。 </p>
+<h2 id="一、日落可逆"><a href="#一、日落可逆" class="headerlink" title="一、日落可逆"></a>一、日落可逆</h2><p> 这部分比较简单，根据提示新建新的动画和动画集就可以，直接上代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"> //上升动画</span><br><span class="line">sun_upAnimator = ObjectAnimator.ofFloat(mSunView, &quot;y&quot;, sunYFirstEnd,sunYFirstStart).setDuration(3000);</span><br><span class="line">sun_upAnimator.setInterpolator(new AccelerateInterpolator());</span><br><span class="line">//上升动画集</span><br><span class="line">sun_upAnimatorSet = new AnimatorSet();</span><br><span class="line">sun_upAnimatorSet.play(sun_upAnimator)</span><br><span class="line">                .with(sunsetSkyAnimator)</span><br><span class="line">                .before(nightSkyAnimator);</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="二、太阳动画特效"><a href="#二、太阳动画特效" class="headerlink" title="二、太阳动画特效"></a>二、太阳动画特效</h2><p> 这部分主要涉及缩放动画、旋转动画，提示使用ObjectAnimator的setRepeatCount(int)方法，但是我并未使用，我的代码如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"> //变大</span><br><span class="line">bigXAnimator = ObjectAnimator.ofFloat(mSunView,&quot;scaleX&quot;,1.0f,2.0f).setDuration(3000);</span><br><span class="line">bigYAnimator = ObjectAnimator.ofFloat(mSunView,&quot;scaleY&quot;,1.0f,2.0f).setDuration(3000);</span><br><span class="line">//变小</span><br><span class="line">smallXAnimator = ObjectAnimator.ofFloat(mSunView,&quot;scaleX&quot;,2.0f,1.0f).setDuration(3000);</span><br><span class="line">smallYAnimator = ObjectAnimator.ofFloat(mSunView,&quot;scaleY&quot;,2.0f,1.0f).setDuration(3000);</span><br><span class="line"></span><br><span class="line">//旋转特效</span><br><span class="line">//顺时针</span><br><span class="line">clockwiseAnimator = ObjectAnimator.ofFloat(mSunView,&quot;rotation&quot;,0f,720f).setDuration(3000);</span><br><span class="line">//逆时针</span><br><span class="line">anti_clockwiseAnimator = ObjectAnimator.ofFloat(mSunView,&quot;rotation&quot;,360f,0f).setDuration(3000);</span><br></pre></td></tr></table></figure>
+
+<p> 旋转动画特别说明：通过旋转sun来实现旋转的光线的效果，所以修改sun.xml给sun加上边框间断线</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"> &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span><br><span class="line">&lt;shape xmlns:android = &quot;http://schemas.android.com/apk/res/android&quot;</span><br><span class="line">    android:shape=&quot;oval&quot;&gt;</span><br><span class="line">    &lt;solid android:color=&quot;@color/bright_sun&quot;/&gt;</span><br><span class="line"></span><br><span class="line">    &lt;stroke</span><br><span class="line">        android:width=&quot;2dp&quot;</span><br><span class="line">        android:color=&quot;@color/huawei_red&quot;</span><br><span class="line">        android:dashWidth=&quot;25dp&quot;</span><br><span class="line">        android:dashGap=&quot;8dp&quot;/&gt;</span><br><span class="line">&lt;/shape&gt;</span><br></pre></td></tr></table></figure>
+
+<p> 以上动画直接.with()加到动画集即可。</p>
+<p> One more thing：</p>
+<p> 为了让太阳更真实，添加倒影效果</p>
+<p> ①在布局文件中，再添加一个FrameLayout，记得android:layout_weight调成0.5，这样sky和sea各一半。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"> &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span><br><span class="line">&lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;</span><br><span class="line">    android:orientation=&quot;vertical&quot;</span><br><span class="line">    android:layout_width=&quot;match_parent&quot;</span><br><span class="line">    android:layout_height=&quot;match_parent&quot;&gt;</span><br><span class="line"></span><br><span class="line">    &lt;FrameLayout</span><br><span class="line">        android:id=&quot;@+id/sky&quot;</span><br><span class="line">        android:layout_width=&quot;match_parent&quot;</span><br><span class="line">        android:layout_height=&quot;0dp&quot;</span><br><span class="line">        android:layout_weight=&quot;0.5&quot;</span><br><span class="line">        android:background=&quot;@color/blue_sky&quot;&gt;</span><br><span class="line">        &lt;ImageView</span><br><span class="line">            android:id=&quot;@+id/sun&quot;</span><br><span class="line">            android:layout_width=&quot;100dp&quot;</span><br><span class="line">            android:layout_height=&quot;100dp&quot;</span><br><span class="line">            android:layout_gravity=&quot;center&quot;</span><br><span class="line">            android:src=&quot;@drawable/sun&quot;</span><br><span class="line">            android:contentDescription=&quot;@string/todo&quot; /&gt;</span><br><span class="line">    &lt;/FrameLayout&gt;</span><br><span class="line"></span><br><span class="line">    &lt;FrameLayout</span><br><span class="line">        android:id=&quot;@+id/sea&quot;</span><br><span class="line">        android:layout_width=&quot;match_parent&quot;</span><br><span class="line">        android:layout_height=&quot;0dp&quot;</span><br><span class="line">        android:layout_weight=&quot;0.5&quot;</span><br><span class="line">        android:background=&quot;@color/sea&quot;&gt;</span><br><span class="line">        &lt;ImageView</span><br><span class="line">            android:id=&quot;@+id/little_sun&quot;</span><br><span class="line">            android:layout_width=&quot;100dp&quot;</span><br><span class="line">            android:layout_height=&quot;100dp&quot;</span><br><span class="line">            android:layout_gravity=&quot;center&quot;</span><br><span class="line">            android:src=&quot;@drawable/sun&quot;</span><br><span class="line">            android:contentDescription=&quot;@string/todo&quot;</span><br><span class="line">            android:alpha=&quot;0.7&quot;/&gt;</span><br><span class="line">    &lt;/FrameLayout&gt;</span><br><span class="line"></span><br><span class="line">&lt;/LinearLayout&gt;</span><br></pre></td></tr></table></figure>
+
+<p> ②倒影需要有位移动画、缩放动画、旋转动画、渐变透明动画。代码如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"> //--------------------------------倒影--------------------------------//</span><br><span class="line">//透明度</span><br><span class="line">alphaAnimator = ObjectAnimator.ofFloat(mLittleSunView, &quot;alpha&quot;, 0.7f, 0.0f).setDuration(3000);</span><br><span class="line">unalphaAnimator = ObjectAnimator.ofFloat(mLittleSunView,&quot;alpha&quot;,0.0f,0.7f).setDuration(3000);</span><br><span class="line">//大小</span><br><span class="line">little_bigXAnimator = ObjectAnimator.ofFloat(mLittleSunView,&quot;scaleX&quot;,1.0f,2.0f).setDuration(3000);</span><br><span class="line">little_bigYAnimator = ObjectAnimator.ofFloat(mLittleSunView,&quot;scaleY&quot;,1.0f,2.0f).setDuration(3000);</span><br><span class="line">little_smallXAnimator = ObjectAnimator.ofFloat(mLittleSunView,&quot;scaleX&quot;,2.0f,1.0f).setDuration(3000);</span><br><span class="line">little_smallYAnimator = ObjectAnimator.ofFloat(mLittleSunView,&quot;scaleY&quot;,2.0f,1.0f).setDuration(3000);</span><br><span class="line">//旋转特效</span><br><span class="line">little_clockwiseAnimator = ObjectAnimator.ofFloat(mLittleSunView,&quot;rotation&quot;,0f,720f).setDuration(3000);</span><br><span class="line">little_anti_clockwiseAnimator = ObjectAnimator.ofFloat(mLittleSunView,&quot;rotation&quot;,360f,0f).setDuration(3000);</span><br><span class="line">//位移</span><br><span class="line">little_upAnimator = ObjectAnimator.ofFloat(mLittleSunView, &quot;y&quot;, littlesunYFirstStart, littlesunYFirstEnd).setDuration(3000);</span><br><span class="line">little_upAnimator.setInterpolator(new AccelerateInterpolator());</span><br><span class="line">little_downAnimator = ObjectAnimator.ofFloat(mLittleSunView, &quot;y&quot;, littlesunYFirstEnd, littlesunYFirstStart).setDuration(3000);</span><br><span class="line">little_downAnimator.setInterpolator(new AccelerateInterpolator());</span><br></pre></td></tr></table></figure>
+
+<p> 分别定义太阳下降、太阳上升、倒影下降、倒影上升动画集，再合并为上升、下降总动画集</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"> //太阳下降动画集</span><br><span class="line">sun_downAnimatorSet = new AnimatorSet();</span><br><span class="line">sun_downAnimatorSet.play(sun_downAnimator)</span><br><span class="line">                .with(sunsetSkyAnimator)</span><br><span class="line">                .with(bigXAnimator).with(bigYAnimator)</span><br><span class="line">                .with(clockwiseAnimator)</span><br><span class="line">                .before(nightSkyAnimator);</span><br><span class="line">//太阳上升动画集</span><br><span class="line">sun_upAnimatorSet = new AnimatorSet();</span><br><span class="line">sun_upAnimatorSet.play(sun_upAnimator)</span><br><span class="line">                .with(sunsetSkyAnimator)</span><br><span class="line">                .with(smallXAnimator).with(smallYAnimator)</span><br><span class="line">                .with(anti_clockwiseAnimator)</span><br><span class="line">                .before(nightSkyAnimator);</span><br><span class="line">//倒影上升动画集、</span><br><span class="line">little_upAnimatorSet = new AnimatorSet();</span><br><span class="line">little_upAnimatorSet</span><br><span class="line">                .play(little_anti_clockwiseAnimator)</span><br><span class="line">                .with(little_bigXAnimator).with(little_bigYAnimator)</span><br><span class="line">                .with(alphaAnimator)</span><br><span class="line">                .with(little_upAnimator);</span><br><span class="line">//倒影下降动画集</span><br><span class="line">little_downAnimatorSet = new AnimatorSet();</span><br><span class="line">little_downAnimatorSet</span><br><span class="line">                .play(little_clockwiseAnimator)</span><br><span class="line">                .with(little_smallXAnimator).with(little_smallYAnimator)</span><br><span class="line">                .with(little_downAnimator)</span><br><span class="line">                .with(unalphaAnimator);</span><br><span class="line"></span><br><span class="line">//总动画集</span><br><span class="line">downAnimatorSet = new AnimatorSet();</span><br><span class="line">downAnimatorSet.play(sun_downAnimatorSet).with(little_upAnimatorSet);</span><br><span class="line">upAnimatorSet = new AnimatorSet();</span><br><span class="line">upAnimatorSet.play(sun_upAnimatorSet).with(little_downAnimatorSet);</span><br></pre></td></tr></table></figure>
+
+<p> 三、日落动画反转</p>
+<p> 目前暂时还没做。</p>
+<h1 id="推荐文章"><a href="#推荐文章" class="headerlink" title="推荐文章"></a><strong>推荐文章</strong></h1><p> 关于Android动画用法，推荐这篇<a href="https://blog.csdn.net/qq_40881680/article/details/82378391" target="_blank" rel="noopener">https://blog.csdn.net/qq_40881680/article/details/82378391</a>，写得很好，在我学动画部分的时候，对我帮助很大。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/28/Android编程权威指南第三版 第31章/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lv Tong">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lv Tong">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/04/28/Android编程权威指南第三版 第31章/" itemprop="url">Android编程权威指南第三版 第31章</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-28T18:41:26+08:00">
+                2019-04-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p> <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener"> </a> 版权声明：本文为博主原创文章，遵循<a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener"> CC 4.0 BY-SA </a>版权协议，转载请附上原文出处链接和本声明。  本文链接：<a href="https://blog.csdn.net/qq_35564145/article/details/89642028" target="_blank" rel="noopener">https://blog.csdn.net/qq_35564145/article/details/89642028</a>   </p>
+<h1 id="一、设备旋转问题"><a href="#一、设备旋转问题" class="headerlink" title="一、设备旋转问题"></a>一、设备旋转问题</h1><h2 id="1-问题"><a href="#1-问题" class="headerlink" title="1.问题"></a>1.问题</h2><p> 设备旋转后，已绘制的矩形框会消失。要解决这个问题，可使用以下View方法：</p>
+<p> protected Parcelable onSaveInstanceState()</p>
+<p> protected void onRestoreInstanceState(Parcelable state)</p>
+<p> 以上方法的工作方式不同于Activity和Fragment的onSaveInstanceState(Bundle)方 法。首先，View视图有ID时，才可以调用它们。其次，相较于Bundle参数，这些方法返回并处 理的是实现Parcelable接口的对象。推荐使用Bundle，这样就不用自己实现Parcelable接口了。 （Parcelable接口的实现很复杂，如有可能，应尽量避免。） 最后，还需要保存BoxDrawingView的View父视图的状态。在Bundle中保存super. onSaveInstanceState()方法结果，然后调用super.onRestoreInstanceState(Parcelable)方法 把结果发送给超类。 </p>
+<h2 id="2-解决办法"><a href="#2-解决办法" class="headerlink" title="2.解决办法"></a>2.解决办法</h2><p> 首先，View要有ID</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">android:id=&quot;@+id/box_draw_view&quot;</span><br></pre></td></tr></table></figure>
+
+<p> 其次使用onSaveInstanceState、onRestoreInstanceState两个方法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"> //保存数据</span><br><span class="line">@Override</span><br><span class="line">protected Parcelable onSaveInstanceState() &#123;</span><br><span class="line">    saveStateBundle = new Bundle();</span><br><span class="line">    saveStateBundle.putParcelable(&quot;onSaveInstanceState&quot;,super.onSaveInstanceState());</span><br><span class="line">    saveStateBundle.putSerializable(&quot;mBoxen&quot;,(Serializable)mBoxen);</span><br><span class="line">    return saveStateBundle;</span><br><span class="line">&#125;</span><br><span class="line">//恢复数据</span><br><span class="line">@Override</span><br><span class="line">protected void onRestoreInstanceState(Parcelable state) &#123;</span><br><span class="line">    Bundle bundle = (Bundle)state;</span><br><span class="line"></span><br><span class="line">    Parcelable restoreState = bundle.getParcelable(&quot;onSaveInstanceState&quot;);</span><br><span class="line">    super.onRestoreInstanceState(restoreState);</span><br><span class="line"></span><br><span class="line">    mBoxen = (List&lt;Box&gt;)bundle.getSerializable(&quot;mBoxen&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h1 id="二、旋转矩形框"><a href="#二、旋转矩形框" class="headerlink" title="二、旋转矩形框"></a>二、旋转矩形框</h1><h2 id="1-问题-1"><a href="#1-问题-1" class="headerlink" title="1.问题"></a>1.问题</h2><p> 请实现以两根手指旋转矩形框。这个练习有点难，想完成它，需在MotionEvent实现代码中 处理多个触控点（pointer）。当然，还要旋转canvas。 要处理多点触摸，先清楚以下概念。</p>
+<p>  pointer index：获知当前一组触控点中，动作事件对应的触控点。</p>
+<p>  pointer ID：给予手势中特定手指一个唯一的ID。</p>
+<p> pointer index可能会变，但pointer ID绝对不会变。</p>
+<p> 请查阅开发者文档，学习以下MotionEvent方法的使用：</p>
+<p> public final int getActionMasked()</p>
+<p> public final int getActionIndex()</p>
+<p> public final int getPointerId(int pointerIndex)</p>
+<p> public final float getX(int pointerIndex)</p>
+<p> public final float getY(int pointerIndex)</p>
+<p> 另外，还需查查ACTION_POINTER_UP和ACTION_POINTER_DOWN常量的用法。 </p>
+<h2 id="2-解决办法-1"><a href="#2-解决办法-1" class="headerlink" title="2.解决办法"></a>2.解决办法</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line"> @Override</span><br><span class="line">public boolean onTouchEvent(MotionEvent event)&#123;</span><br><span class="line">    PointF current=new PointF(event.getX(),event.getY());</span><br><span class="line">    String action=&quot;&quot;;</span><br><span class="line">    switch(event.getActionMasked())&#123;</span><br><span class="line">        case MotionEvent.ACTION_DOWN:</span><br><span class="line">            action=&quot;ACTION_DOWN&quot;;</span><br><span class="line">            mCurrentBox=new Box(current);</span><br><span class="line">            mBoxen.add(mCurrentBox);</span><br><span class="line">            //当第一个手指触摸到屏幕后,记录第一个触控点的ID</span><br><span class="line">            pointer1=event.getPointerId(event.getActionIndex());</span><br><span class="line">            break;</span><br><span class="line">        case MotionEvent.ACTION_POINTER_DOWN:</span><br><span class="line">            action=&quot;ACTION_POINTER_DOWN&quot;;</span><br><span class="line">            //当第二个手指触摸到屏幕后,记录第二个触控点的ID</span><br><span class="line">            pointer2=event.getPointerId(event.getActionIndex());</span><br><span class="line">            //得到第一，第二个触控点的横，纵坐标</span><br><span class="line">            fx = event.getX(event.findPointerIndex(pointer1));</span><br><span class="line">            fy = event.getY(event.findPointerIndex(pointer1));</span><br><span class="line">            sx = event.getX(event.findPointerIndex(pointer2));</span><br><span class="line">            sy=event.getY(event.findPointerIndex(pointer2));</span><br><span class="line">            mCurrentBox=null;</span><br><span class="line">            break;</span><br><span class="line">        case MotionEvent.ACTION_UP:</span><br><span class="line">            action=&quot;ACTION_UP&quot;;</span><br><span class="line">            pointer1=-1;</span><br><span class="line">            mCurrentBox=null;</span><br><span class="line">            break;</span><br><span class="line">        case MotionEvent.ACTION_POINTER_UP:</span><br><span class="line">            action=&quot;ACTION_POINTER_UP&quot;;</span><br><span class="line">            pointer2=-1;</span><br><span class="line">            break;</span><br><span class="line">        case MotionEvent.ACTION_MOVE:</span><br><span class="line">            action=&quot;ACTION_MOVE&quot;;</span><br><span class="line">            if(pointer1!=removed &amp;&amp; pointer2!=removed)&#123;</span><br><span class="line">                //得到手指移动后第一，第二个触控点的横，纵坐标</span><br><span class="line">                float nfx=event.getX(event.findPointerIndex(pointer1));</span><br><span class="line">                float nfy=event.getY(event.findPointerIndex(pointer1));</span><br><span class="line">                float nsx=event.getX(event.findPointerIndex(pointer2));</span><br><span class="line">                float nsy=event.getY(event.findPointerIndex(pointer2));</span><br><span class="line">                //计算移动前后的角度差值</span><br><span class="line">                float mAngle = angleBetweenLines(fx, fy, sx, sy, nfx, nfy, nsx, nsy);</span><br><span class="line">            &#125;</span><br><span class="line">            if(mCurrentBox!=null &amp;&amp; pointer2==removed)&#123;</span><br><span class="line">                mCurrentBox.setmCurrent(current);</span><br><span class="line">            &#125;</span><br><span class="line">            invalidate();</span><br><span class="line">            break;</span><br><span class="line">        case MotionEvent.ACTION_CANCEL:</span><br><span class="line">            action=&quot;ACTION_CANCEL&quot;;</span><br><span class="line">            mCurrentBox=null;</span><br><span class="line">            pointer1=-1;</span><br><span class="line">            pointer2=-1;</span><br><span class="line">            break;</span><br><span class="line">        default:;</span><br><span class="line">    &#125;</span><br><span class="line">    Log.d(TAG,&quot;action &quot;+action+&quot; at x=&quot;+current.x+&quot; y=&quot;+current.y);</span><br><span class="line">    return true;</span><br><span class="line">&#125;</span><br><span class="line">public float angleBetweenLines(float fx, float fy, float sx, float sy, float nfx, float nfy, float nsx, float nsy)&#123;</span><br><span class="line">    float radian1=(float)Math.atan2(fy-sy,fx-sx);</span><br><span class="line">    float radian2=(float)Math.atan2(nfy-nsy,nfx-nsx);</span><br><span class="line">    float angle=(float)(Math.toDegrees(radian2-radian1)%360);</span><br><span class="line">    if(angle&lt;0)&#123;</span><br><span class="line">        angle+=360;</span><br><span class="line">    &#125;</span><br><span class="line">    return angle;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/27/Android编程权威指南第三版 第25章/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lv Tong">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lv Tong">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/04/27/Android编程权威指南第三版 第25章/" itemprop="url">Android编程权威指南第三版 第25章</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-27T21:11:13+08:00">
+                2019-04-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p> <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener"> </a> 版权声明：本文为博主原创文章，遵循<a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener"> CC 4.0 BY-SA </a>版权协议，转载请附上原文出处链接和本声明。  本文链接：<a href="https://blog.csdn.net/qq_35564145/article/details/89605967" target="_blank" rel="noopener">https://blog.csdn.net/qq_35564145/article/details/89605967</a>   </p>
+<h1 id="一、分页显示"><a href="#一、分页显示" class="headerlink" title="一、分页显示"></a>一、分页显示</h1><h2 id="1-问题"><a href="#1-问题" class="headerlink" title="1.问题"></a>1.问题</h2><p> getRecent方法默认返回一页包含100个结果的数据。不过，该方法还有个叫作page的参数， 可以用它返回第二页、第三页等更多页数据。 请实现一个RecyclerView.OnScrollListener方法，只要用户看完当前页，就使用下页返 回结果替换当前页。想更有挑战的话，可以尝试把后续结果页添加到当前结果页后面。</p>
+<h2 id="2-提示"><a href="#2-提示" class="headerlink" title="2.提示"></a>2.提示</h2><p> onScrollListener 有两个可以重写的方法，一个是 onScrollStateChanged()，还有一个是 onScrolled，对我们这个需求来说，显然 onScrollStateChanged 比较合适，ScrollState 也有三种：</p>
+<p> SCROLL_STATE_IDLE: 视图没有被拖动，处于静止<br> SCROLL_STATE_DRAGGING： 视图正在拖动中<br> SCROLL_STATE_SETTLING： 视图在惯性滚动</p>
+<h2 id="3-解决办法"><a href="#3-解决办法" class="headerlink" title="3.解决办法"></a>3.解决办法</h2><h3 id="3-1-实现RecyclerView-OnScrollListener方法"><a href="#3-1-实现RecyclerView-OnScrollListener方法" class="headerlink" title="3.1.实现RecyclerView.OnScrollListener方法"></a>3.1.实现RecyclerView.OnScrollListener方法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"> private RecyclerView.OnScrollListener onScrollListener = new RecyclerView.OnScrollListener() &#123;</span><br><span class="line">    @Override</span><br><span class="line">    public void onScrollStateChanged(@NonNull RecyclerView recyclerView, int newState) &#123;</span><br><span class="line">        super.onScrollStateChanged(recyclerView, newState);</span><br><span class="line">        //获取LayoutManager</span><br><span class="line">        GridLayoutManager layoutManager = (GridLayoutManager)recyclerView.getLayoutManager();</span><br><span class="line">        //最后显示位置</span><br><span class="line">        int mLastPosition = layoutManager.findLastCompletelyVisibleItemPosition();</span><br><span class="line">        if (mPhotoAdapter == null) &#123;</span><br><span class="line">            return;</span><br><span class="line">        &#125;</span><br><span class="line">        if (newState == RecyclerView.SCROLL_STATE_IDLE &amp;&amp; mLastPosition &gt;= mPhotoAdapter.getItemCount() -1)&#123;</span><br><span class="line">            if (mFetchItemsTask.getStatus() == AsyncTask.Status.FINISHED)&#123;</span><br><span class="line">                mNextPage++;</span><br><span class="line">                if (mNextPage &lt;= MAX_PAGES)&#123;</span><br><span class="line">                    Toast.makeText(getActivity(),&quot;waiting to loading......&quot;,Toast.LENGTH_SHORT).show();</span><br><span class="line">                    mFetchItemsTask = new FetchItemsTask();</span><br><span class="line">                    mFetchItemsTask.execute(mNextPage);</span><br><span class="line">                &#125;else &#123;</span><br><span class="line">                    Toast.makeText(getActivity(),&quot;This is the end!&quot;,Toast.LENGTH_SHORT).show();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+
+
+<h3 id="3-2-添加数据并展示"><a href="#3-2-添加数据并展示" class="headerlink" title="3.2.添加数据并展示"></a>3.2.添加数据并展示</h3><p> 在 Adapter 中加入一个 addData 方法，将新的数据加入到数据集中，然后使用 notifyDataSetChanged 方法更新视图。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"> public void addData(List&lt;GalleryItem&gt; mItem) &#123;</span><br><span class="line">    mGalleryItems.addAll(mItem);</span><br><span class="line">    notifyDataSetChanged();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p> 然后修改setAdapter方法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"> private void setupAdapter() &#123;</span><br><span class="line">    if (isAdded())&#123;</span><br><span class="line">        if (mNextPage == 1)&#123;</span><br><span class="line">            mPhotoAdapter = new PhotoAdapter(mItem);</span><br><span class="line">            mPhotoRecyclerView.setAdapter(mPhotoAdapter);</span><br><span class="line">            mPhotoRecyclerView.addOnScrollListener(onScrollListener);</span><br><span class="line">        &#125;else &#123;</span><br><span class="line">            mPhotoAdapter.addData(mItem);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h1 id="二、动态调整网格列"><a href="#二、动态调整网格列" class="headerlink" title="二、动态调整网格列"></a>二、动态调整网格列</h1><h2 id="1-问题-1"><a href="#1-问题-1" class="headerlink" title="1.问题"></a>1.问题</h2><p> 当前，显示图片标题的网格固定有3列。编写代码动态调整网格列数，实现在横屏或大屏幕 设备上显示更多列标题。 </p>
+<h2 id="2-提示-1"><a href="#2-提示-1" class="headerlink" title="2.提示"></a>2.提示</h2><p> 实现这个目标有个简单方法：分别为不同的设备配置或屏幕尺寸提供整数修饰资源。这实际和第17章中为不同尺寸屏幕提供不同布局的方式差不多。整数修饰资源应放置在res/values目录 中。具体实施细节可参阅Android开发者文档。 提供整数修饰资源的方式不太好确定网格列细分粒度（只能凭经验预先定义列数）。下面再 介绍一个颇具挑战的方法：在fragment的视图创建时就计算并设置好网格列数。显然，这种方式 更加灵活实用。基于RecyclerView的当前宽度和预定义网格列宽，就可以计算出列数。 实施前还有个问题要解决：你不能在onCreateView()方法中计算网格列数，因为这个时候 RecyclerView还没有改变。不过，可以实现ViewTreeObserver.OnGlobalLayoutListener监 听器方法和计算列数的onGlobalLayout()方法，然后使用addOnGlobalLayoutListener()把 监听器添加给RecyclerView视图。 </p>
+<h2 id="3-解决办法-1"><a href="#3-解决办法-1" class="headerlink" title="3.解决办法"></a>3.解决办法</h2><p> 实现OnGlobalLayoutListener</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"> mPhotoRecyclerView.getViewTreeObserver()</span><br><span class="line">.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() &#123;</span><br><span class="line">    @Override</span><br><span class="line">    public void onGlobalLayout() &#123;</span><br><span class="line">        // 计算列数，以 1080p 屏幕显示3列为基准</span><br><span class="line">        int columns = mPhotoRecyclerView.getWidth() / 350;</span><br><span class="line">        // 重新设置 LayoutManager、Adapter 和 Listener</span><br><span class="line">        mPhotoRecyclerView.setLayoutManager(new GridLayoutManager(getActivity(), columns));</span><br><span class="line">        mPhotoRecyclerView.setAdapter(mPhotoAdapter);</span><br><span class="line">        mPhotoRecyclerView.addOnScrollListener(onButtomListener);</span><br><span class="line">        // 滚动到之前看到的位置</span><br><span class="line">        mPhotoRecyclerView.getLayoutManager().scrollToPosition(mLastPosition);</span><br><span class="line">        //将 GlobalLayoutListener 去掉以避免多次触发</span><br><span class="line">        mPhotoRecyclerView.getViewTreeObserver().removeOnGlobalLayoutListener(this);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/25/Android编程权威指南第三版  第24章/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lv Tong">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lv Tong">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/04/25/Android编程权威指南第三版  第24章/" itemprop="url">Android编程权威指南第三版  第24章</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-25T23:50:25+08:00">
+                2019-04-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p> <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener"> </a> 版权声明：本文为博主原创文章，遵循<a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener"> CC 4.0 BY-SA </a>版权协议，转载请附上原文出处链接和本声明。  本文链接：<a href="https://blog.csdn.net/qq_35564145/article/details/89528671" target="_blank" rel="noopener">https://blog.csdn.net/qq_35564145/article/details/89528671</a>   </p>
+<h1 id="挑战练习：应用图标"><a href="#挑战练习：应用图标" class="headerlink" title="挑战练习：应用图标"></a><strong>挑战练习：应用图标</strong></h1><p> 前面，为在启动器应用中显示各个activity的名称，你使用了ResolveInfo.loadLabel(…) 方法。loadIcon()是ResolveInfo类的另一个方法，可以用它为每个应用加载显示图标。作为 练习，请给NerdLauncher应用中显示的所有应用添加图标。 </p>
+<p> 解决办法：</p>
+<p> 一、创建recyclerView中item的布局文件(item_recycler_view.xml)，包含一个ImageView和一个TextView。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"> &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span><br><span class="line">&lt;LinearLayout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;</span><br><span class="line">    xmlns:tools=&quot;http://schemas.android.com/tools&quot;</span><br><span class="line">    android:orientation=&quot;horizontal&quot;</span><br><span class="line">    android:layout_width=&quot;match_parent&quot;</span><br><span class="line">    android:layout_height=&quot;wrap_content&quot;&gt;</span><br><span class="line">    &lt;ImageView</span><br><span class="line">        android:id=&quot;@+id/item_icon&quot;</span><br><span class="line">        android:layout_width=&quot;0dp&quot;</span><br><span class="line">        android:layout_height=&quot;wrap_content&quot;</span><br><span class="line">        android:layout_weight=&quot;1&quot;/&gt;</span><br><span class="line">    &lt;TextView</span><br><span class="line">        android:id=&quot;@+id/item_text&quot;</span><br><span class="line">        tools:text=&quot;asd&quot;</span><br><span class="line">        android:textSize=&quot;20sp&quot;</span><br><span class="line">        android:layout_gravity=&quot;center&quot;</span><br><span class="line">        android:layout_width=&quot;match_parent&quot;</span><br><span class="line">        android:layout_height=&quot;wrap_content&quot;</span><br><span class="line">        android:layout_weight=&quot;2&quot;/&gt;</span><br><span class="line"></span><br><span class="line">&lt;/LinearLayout&gt;</span><br></pre></td></tr></table></figure>
+
+<p> 二、修改NerdLauncherFragment.java文件，从mResolveInfo中获取activity的图标。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br></pre></td><td class="code"><pre><span class="line"> package android.bignerdranch.com.nerdlauncher;</span><br><span class="line"></span><br><span class="line">import android.content.Intent;</span><br><span class="line">import android.content.pm.ActivityInfo;</span><br><span class="line">import android.content.pm.PackageManager;</span><br><span class="line">import android.content.pm.ResolveInfo;</span><br><span class="line">import android.graphics.drawable.Drawable;</span><br><span class="line">import android.os.Bundle;</span><br><span class="line">import android.support.annotation.NonNull;</span><br><span class="line">import android.support.annotation.Nullable;</span><br><span class="line">import android.support.v4.app.Fragment;</span><br><span class="line">import android.support.v7.widget.LinearLayoutManager;</span><br><span class="line">import android.support.v7.widget.RecyclerView;</span><br><span class="line">import android.util.Log;</span><br><span class="line">import android.view.LayoutInflater;</span><br><span class="line">import android.view.View;</span><br><span class="line">import android.view.ViewGroup;</span><br><span class="line">import android.widget.ImageView;</span><br><span class="line">import android.widget.TextView;</span><br><span class="line"></span><br><span class="line">import java.util.Collection;</span><br><span class="line">import java.util.Collections;</span><br><span class="line">import java.util.Comparator;</span><br><span class="line">import java.util.List;</span><br><span class="line"></span><br><span class="line">public class NerdLauncherFragment extends Fragment &#123;</span><br><span class="line">    private RecyclerView mRecyclerView;</span><br><span class="line"></span><br><span class="line">    private static final String TAG = &quot;NerdLauncherFragment&quot;;</span><br><span class="line"></span><br><span class="line">    public static NerdLauncherFragment newInstance()&#123;</span><br><span class="line">        return new NerdLauncherFragment();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Nullable</span><br><span class="line">    @Override</span><br><span class="line">    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) &#123;</span><br><span class="line">        View v = inflater.inflate(R.layout.fragment_nerd_launcher,container,false);</span><br><span class="line">        mRecyclerView = (RecyclerView)v.findViewById(R.id.app_recycler_view);</span><br><span class="line">        mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));</span><br><span class="line">        setupAdapter();</span><br><span class="line">        return v;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    private void setupAdapter() &#123;</span><br><span class="line">        Intent startupIntent = new Intent(Intent.ACTION_MAIN);</span><br><span class="line">        startupIntent.addCategory(Intent.CATEGORY_LAUNCHER);</span><br><span class="line">        PackageManager pm = getActivity().getPackageManager();</span><br><span class="line">        List&lt;ResolveInfo&gt; activities = pm.queryIntentActivities(startupIntent, 0);</span><br><span class="line">        Collections.sort(activities, new Comparator&lt;ResolveInfo&gt;() &#123;</span><br><span class="line">            @Override</span><br><span class="line">            public int compare(ResolveInfo o1, ResolveInfo o2) &#123;</span><br><span class="line">                PackageManager packageManager = getActivity().getPackageManager();</span><br><span class="line">                return String.CASE_INSENSITIVE_ORDER.compare(</span><br><span class="line">                        o1.loadLabel(packageManager).toString(),</span><br><span class="line">                        o2.loadLabel(packageManager).toString()</span><br><span class="line">                );</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">        Log.i(TAG, &quot;Found &quot; + activities.size() + &quot; activities.&quot;);</span><br><span class="line">        mRecyclerView.setAdapter(new ActivityAdapter(activities));</span><br><span class="line">    &#125;</span><br><span class="line">    //Holder</span><br><span class="line">    private class ActivityHolder extends RecyclerView.ViewHolder implements View.OnClickListener&#123;</span><br><span class="line">        private ResolveInfo mResolveInfo;</span><br><span class="line">        private TextView mNameTextView;</span><br><span class="line">        //添加实例</span><br><span class="line">        private ImageView mIconImageView;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        public ActivityHolder(@NonNull View itemView) &#123;</span><br><span class="line">            super(itemView);</span><br><span class="line">            mNameTextView = (TextView)itemView.findViewById(R.id.item_text);</span><br><span class="line">            //绑定资源id</span><br><span class="line">            mIconImageView = (ImageView)itemView.findViewById(R.id.item_icon);</span><br><span class="line">            mNameTextView.setOnClickListener(this);</span><br><span class="line">            //设置setOnClickListener</span><br><span class="line">            mIconImageView.setOnClickListener(this);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        private void bindActivity(ResolveInfo resolveInfo) &#123;</span><br><span class="line">            mResolveInfo = resolveInfo;</span><br><span class="line">            PackageManager packageManager = getActivity().getPackageManager();</span><br><span class="line">            String appName = mResolveInfo.loadLabel(packageManager).toString();</span><br><span class="line">            //使用loadIcon方法从mResolveInfo中获取activity的图标</span><br><span class="line">            Drawable appIcon = mResolveInfo.loadIcon(packageManager);</span><br><span class="line">            //setImageDrawable方法设置</span><br><span class="line">            mIconImageView.setImageDrawable(appIcon);</span><br><span class="line">            mNameTextView.setText(appName);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        @Override</span><br><span class="line">        public void onClick(View v) &#123;</span><br><span class="line">            ActivityInfo activityInfo = mResolveInfo.activityInfo;</span><br><span class="line">            Intent i = new Intent(Intent.ACTION_MAIN)</span><br><span class="line">                    .setClassName(activityInfo.applicationInfo.packageName,  activityInfo.name)</span><br><span class="line">                    .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);</span><br><span class="line">            startActivity(i);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    //Adapter</span><br><span class="line">    private class ActivityAdapter extends RecyclerView.Adapter&lt;ActivityHolder&gt;&#123;</span><br><span class="line"></span><br><span class="line">        private final List&lt;ResolveInfo&gt; mActivities;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        public ActivityAdapter(List&lt;ResolveInfo&gt; activities)&#123;</span><br><span class="line">            mActivities = activities;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        @NonNull</span><br><span class="line">        @Override</span><br><span class="line">        public ActivityHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) &#123;</span><br><span class="line">            LayoutInflater layoutInflater = LayoutInflater.from(getActivity());</span><br><span class="line">            //视图修改为新创建的item的布局</span><br><span class="line">            View view = layoutInflater</span><br><span class="line">                    .inflate(R.layout.item_recycler_view,viewGroup,false);</span><br><span class="line">            return new ActivityHolder(view);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        @Override</span><br><span class="line">        public void onBindViewHolder(@NonNull ActivityHolder activityHolder, int i) &#123;</span><br><span class="line">            ResolveInfo resolveInfo = mActivities.get(i);</span><br><span class="line">            activityHolder.bindActivity(resolveInfo);</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        @Override</span><br><span class="line">        public int getItemCount() &#123;</span><br><span class="line">            return mActivities.size();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p> 三、修改结果如下图</p>
+<p> <img src="https://img-blog.csdnimg.cn/20190425234944983.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1NTY0MTQ1,size_16,color_FFFFFF,t_70" alt></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
   </section>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
 
 
           </div>
@@ -394,7 +1633,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -402,6 +1641,15 @@
 
             
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
             
 
           </nav>
